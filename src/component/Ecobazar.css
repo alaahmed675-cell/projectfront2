@@ -1,0 +1,101 @@
+/* Product Card (الكروت الكبيرة) */
+.product-card {
+    transition: all 0.3s ease;
+    border: 1px solid #f2f2f2;
+    position: relative;
+    background: #fff;
+    cursor: pointer;
+}
+
+.product-card:hover, .product-card.active-card {
+    border-color: #00B207;
+    box-shadow: 0 10px 20px rgba(0, 178, 7, 0.1);
+}
+
+/* Card Actions (القلب والعين) */
+.card-actions {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 2;
+}
+
+.action-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+    color: #1a1a1a;
+}
+
+.action-icon:hover {
+    background: #00B207;
+    color: white;
+    border-color: #00B207;
+}
+
+/* Bag Button (زرار الشنطة) */
+.bag-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #F2F2F2;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    color: #1a1a1a;
+}
+
+.product-card:hover .bag-btn, .product-card.active-card .bag-btn {
+    background: #00B207;
+    color: white;
+}
+
+/* List Item (القوائم الصغيرة اللي تحت) */
+.list-item-card {
+    border: 1px solid transparent;
+    transition: 0.3s;
+    background: #fff;
+    cursor: pointer;
+}
+
+.list-item-card:hover, .list-item-card.active-list {
+    border-color: #00B207;
+    box-shadow: 0 4px 15px rgba(0, 178, 7, 0.05);
+}
+
+.list-action-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #f2f2f2;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1a1a1a;
+    transition: 0.2s;
+}
+
+.list-action-btn.green-bag {
+    background-color: #00B207;
+    color: white;
+    border-color: #00B207;
+}
+
+.list-action-btn:hover {
+    background-color: #00B207;
+    color: white;
+    border-color: #00B207;
+}

@@ -1,0 +1,68 @@
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show
+
+ {
+    color:var(--bs-nav-link-color);
+}
+.flex{
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    margin-top: 2%;
+}
+
+/* تحسينات عامة */
+.ecobazar-container {
+    font-family: 'Poppins', sans-serif;
+    color: #1A1A1A;
+}
+
+/* تأثير التمرير على كروت القوائم */
+.list-item-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.list-item-card:hover {
+    border-color: #00B207 !important;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08) !important;
+}
+
+/* كروت المنتجات */
+.shadow-sm-hover {
+    transition: all 0.3s ease;
+}
+.shadow-sm-hover:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* قسم الإنستجرام المطور */
+.insta-box img {
+    transition: transform 0.5s ease;
+}
+
+.insta-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.insta-box:hover .insta-overlay {
+    opacity: 1;
+    background-color: rgba(0, 178, 7, 0.4); /* اللون الأخضر الشفاف عند الـ Hover */
+}
+
+.insta-overlay.active-icon {
+    opacity: 1;
+    background-color: rgba(0, 32, 0, 0.2);
+}
+
+.insta-box:hover img {
+    transform: scale(1.1);
+}
+
+/* ألوان النجوم */
+.text-warning {
+    color: #FF8A00 !important;
+}
+
+
